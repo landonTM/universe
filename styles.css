@@ -393,5 +393,94 @@ a:hover {
     text-decoration: none;
     color: #ffcc00; /* Optional hover color change */
 }
+/* General Reset for Responsiveness */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Mobile Styles: Target devices with a max width of 768px */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .brand-tabs {
+        flex-direction: column; /* Stack navigation vertically */
+        gap: 0.5rem;
+    }
+
+    .tab {
+        font-size: 0.9rem; /* Smaller navigation buttons */
+        padding: 0.5rem 1rem;
+    }
+
+    /* Roster Container */
+    .roster-container {
+        flex-direction: column; /* Stack roster cards vertically */
+        padding: 1rem;
+    }
+
+    /* Superstar Card */
+    .superstar-card {
+        width: 90%; /* Reduce card width */
+        margin: 0 auto; /* Center-align the cards */
+        margin-bottom: 1rem; /* Add spacing between cards */
+        text-align: center;
+    }
+
+    .superstar-image {
+        width: 100px; /* Reduce image size */
+        height: auto;
+    }
+
+    .superstar-name {
+        font-size: 1rem; /* Slightly smaller font size */
+    }
+
+    .superstar-details {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .superstar-overall {
+        font-size: 0.9rem;
+        color: #ffcc00; /* Keep the golden rating */
+        font-weight: bold;
+    }
+
+    /* Brand Indicator */
+    .brand-indicator {
+        height: 3px; /* Thinner indicator line */
+    }
+
+    /* Filter Buttons */
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .filter-button {
+        width: 80%; /* Stretch buttons */
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Banner Image */
+    .banner-image {
+        height: 150px; /* Reduce height */
+        object-fit: cover;
+    }
+}
 
 
